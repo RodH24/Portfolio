@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class BannerComponent {
 
   name: string = 'Hector Rodriguez';
-  urlImg: string = 'https://watermark.lovepik.com/photo/50049/3069.jpg_wh1200.jpg';
+  urlImg: string = 'https://metadatastr.blob.core.windows.net/imagesblogsafe/20180605-princ.jpg';
   bannerImg: string = `url('${this.urlImg}')`;
 }
