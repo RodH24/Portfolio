@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
+import { WorksDoneComponent } from './components/works-done/works-done.component';
+import { WorkComponent } from './components/work/work.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutComponent } from './components/about/about.component';
     NavbarComponent,
     BannerComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    WorksDoneComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
