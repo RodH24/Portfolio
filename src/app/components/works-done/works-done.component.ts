@@ -18,6 +18,6 @@ export class WorksDoneComponent implements OnInit {
   }
 
  getWorkList(): void{
-  this.workList = this.workListService.getWorks();
+  this.workListService.getWorks().subscribe(workList => this.workList = workList);
  }
 }
