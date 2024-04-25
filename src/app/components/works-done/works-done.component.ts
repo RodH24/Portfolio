@@ -20,4 +20,18 @@ export class WorksDoneComponent implements OnInit {
  getWorkList(): void{
   this.workListService.getWorks().subscribe(workList => this.workList = workList);
  }
+
+ addWork(){
+  let newId: number = this.workList.length +1;
+  const newWork: WorkModel = {
+    id: newId,
+    title: `trabajo ${newId}`,
+    urlImage: "https://i.pinimg.com/originals/ee/7d/5c/ee7d5c038b38e0a3bc537407cc344dad.png",
+    description: "El mejor trabajo del mundo"
+  }  
+  this.workListService.add(newWork as WorkModel)
+  .subscribe((work: WorkModel) =>{
+    this.workList.push(work);
+  });
+ }
 }
